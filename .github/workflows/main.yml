@@ -19,7 +19,6 @@ jobs:
           username: ${{ secrets.SSH_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: ${{ secrets.SSH_PORT }}
-          debug: true
           script: |
             cd /var/www/html
             sudo git pull origin main
